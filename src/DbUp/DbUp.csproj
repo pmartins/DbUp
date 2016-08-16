@@ -42,6 +42,9 @@
     <AssemblyOriginatorKeyFile>dbup.snk</AssemblyOriginatorKeyFile>
   </PropertyGroup>
   <ItemGroup>
+    <Reference Include="Sybase.AdoNet2.AseClient">
+      <HintPath>..\DbUp.SybaseASE\lib\Sybase.AdoNet2.AseClient.dll</HintPath>
+    </Reference>
     <Reference Include="System" />
     <Reference Include="System.Core" />
     <Reference Include="System.Xml.Linq" />
@@ -112,6 +115,7 @@
     <Compile Include="Support\SqlServer\SqlServerExtensions.cs" />
     <Compile Include="Builder\SupportedDatabases.cs" />
     <Compile Include="Support\SqlServer\SqlCommandReader.cs" />
+    <Compile Include="Support\SybaseAse\SybaseAseTableJournal.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="dbup.nuspec" />
